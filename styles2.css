@@ -1,0 +1,302 @@
+/* Importando fontes e ajustes gerais */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Oswald:wght@200..700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #3b3b3b;
+    color: #e0e0e0;
+}
+
+header {
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+header.dark-mode {
+    background-color: #292929;
+    color: #e0e0e0;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Bodoni Moda SC';
+    color: #ffffff;
+}
+
+#menu-toggle, #dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#dark-mode-toggle {
+    margin-left: 15px;
+}
+
+nav {
+    background-color: #343a40; /* Cor de fundo padrão do Bootstrap para navbars */
+}
+
+nav .nav-link {
+    color: #ffffff;
+    padding: 10px 15px;
+}
+
+nav .nav-link:hover {
+    background-color: #495057;
+}
+
+.hero-image {
+    margin-top: 70px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #1a1a1a;
+}
+
+h2 {
+    color: #e0e0e0;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+body.dark-mode footer {
+    background-color: #4e4e4e;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        background-color: #343a40;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        color: #ffffff;
+    }
+
+    .navbar-nav .nav-link:hover {
+        background-color: #495057;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Oswald:wght@200..700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+body.dark-mode {
+    background-color: #3b3b3b;
+    color: #e0e0e0;
+}
+
+header {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: -70px;
+    position: fixed;
+    width: 98%;
+    height: 50px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s; }
+
+header.dark-mode {
+    background-color: #292929;
+    color: #e0e0e0;
+}
+h2.dark-mode{color: red;}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Bodoni Moda SC';
+    color: #1b1b1b;
+}
+
+#menu-toggle {
+    background: none;
+    border: none;
+    color: #000000;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; }
+
+#dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav a {
+    color: #353535bb;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #d6d6d6;
+}
+
+.hero-image {
+    margin-top: 70px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #1a1a1a;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+body.dark-mode footer {
+    background-color: #4e4e4e;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(209, 47, 47, 0.2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu li {
+    width: 150px;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #menu-toggle {
+        margin-left: auto;
+        display: block; 
+        
+    }
+
+    nav.active {
+        margin-top: 260px;
+        background-color: #ada6a6;
+        display: flex; 
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li:hover .submenu {
+        display: none; 
+    }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVini News</title>
+    <!-- Adicionando os arquivos CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles2.css">
+    <!-- Incluindo o Bootstrap 5 para o exemplo da navbar offcanvas -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navegação principal -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">TechVini News</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="ex.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gitbasico.html">História</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gt.html">Tutoriais</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="CONTATO.HTML">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="repo.html">Repositórios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="adv.html">Senior</a>
+                </li>
+            </ul>
+            <form class="form-inline ml-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <button id="dark-mode-toggle" class="btn btn-outline-light ml-3" aria-label="Toggle Dark Mode">🌙</button>
+        </div>
+    </nav>
+
+    <!-- Imagem de destaque -->
+  
+
+    <!-- Conteúdo principal -->
+    <main class="container mt-5 pt-4">
+        <section>
+            <h1>Comandos Básicos do Git, Branches e Merge, Contribuições e Pull Requests, Issues e Projetos</h1>
+
+            <h2>11. Quais são os principais comandos do Git que são usados com frequência?</h2>
+            <p>Os principais comandos do Git usados com frequência são:</p>
+            <ul>
+                <li><code>git init</code>: Inicializa um novo repositório Git.</li>
+                <li><code>git clone</code>: Cria uma cópia local de um repositório remoto.</li>
+                <li><code>git add</code>: Adiciona arquivos ou mudanças ao índice (staging area) para o próximo commit.</li>
+                <li><code>git commit</code>: Salva as alterações adicionadas ao índice no repositório local, criando um ponto de versão.</li>
+                <li><code>git push</code>: Envia commits do repositório local para o repositório remoto.</li>
+                <li><code>git pull</code>: Obtém e incorpora mudanças do repositório remoto para o repositório local.</li>
+            </ul>
+
+            <h2>12. Como fazer commits e qual a importância de uma mensagem de commit clara e descritiva?</h2>
+            <p>Para fazer um commit, siga estes passos:</p>
+            <ol>
+                <li>Adicione as mudanças ao índice com <code>git add</code>.</li>
+                <li>Execute <code>git commit -m "Sua mensagem de commit aqui"</code> para salvar as alterações no repositório local.</li>
+            </ol>
+            <p>Uma mensagem de commit clara e descritiva é importante porque:</p>
+            <ul>
+                <li>Facilita o entendimento do histórico do projeto para outros desenvolvedores e para você mesmo no futuro.</li>
+                <li>Ajuda a identificar rapidamente o propósito de mudanças específicas.</li>
+                <li>Melhora a rastreabilidade e a comunicação sobre o que foi alterado e por quê.</li>
+            </ul>
+
+            <h2>13. O que são branches e como criar uma nova branch no GitHub?</h2>
+            <p>Branches (ou ramificações) são versões paralelas do repositório que permitem o desenvolvimento de recursos, correções ou experimentos de forma isolada. Para criar uma nova branch, siga estes passos:</p>
+            <ol>
+                <li>No GitHub, vá até a página do repositório e clique no menu suspenso de branches.</li>
+                <li>Digite o nome da nova branch no campo de texto e clique em “Create branch” (Criar branch).</li>
+                <li>Ou, no terminal, use o comando <code>git branch nome-da-branch</code> e depois <code>git checkout nome-da-branch</code> para mudar para a nova branch.</li>
+            </ol>
+
+            <h2>14. Como fazer merge de branches e quais são as boas práticas para isso?</h2>
+            <p>Para fazer merge de branches, siga estes passos:</p>
+            <ol>
+                <li>Certifique-se de estar na branch que deve receber as mudanças. Use <code>git checkout nome-da-branch</code> para mudar para essa branch.</li>
+                <li>Execute <code>git merge nome-da-branch-a-ser-mesclada</code> para mesclar as mudanças da branch especificada.</li>
+            </ol>
+            <p>Boas práticas para fazer merge incluem:</p>
+            <ul>
+                <li>Revisar e testar as mudanças antes de mesclar.</li>
+                <li>Resolver conflitos de merge cuidadosamente.</li>
+                <li>Escrever mensagens de commit claras para os merges.</li>
+                <li>Usar pull requests para revisão e integração de mudanças colaborativas.</li>
+            </ul>
+
+            <h2>15. Como fazer um fork de um repositório?</h2>
+            <p>Para fazer um fork de um repositório no GitHub:</p>
+            <ol>
+                <li>Vá até a página do repositório que deseja bifurcar.</li>
+                <li>Clique no botão “Fork” no canto superior direito da página.</li>
+                <li>Escolha a conta ou organização onde você deseja criar o fork.</li>
+                <li>O repositório será copiado para sua conta, e você poderá começar a trabalhar com ele como um repositório independente.</li>
+            </ol>
+
+            <h2>16. O que é um pull request e como criar um pull request?</h2>
+            <p>Um pull request (PR) é uma solicitação para mesclar mudanças de uma branch para outra, geralmente usada para integrar alterações a uma branch principal (como a main ou master). Para criar um pull request:</p>
+            <ol>
+                <li>Faça push das suas mudanças para uma branch no repositório remoto.</li>
+                <li>Vá até a página do repositório no GitHub e clique na aba “Pull requests”.</li>
+                <li>Clique no botão “New pull request” (Nova pull request).</li>
+                <li>Selecione a branch que contém suas mudanças e a branch para a qual deseja mesclar.</li>
+                <li>Adicione um título e uma descrição para o pull request e clique em “Create pull request” (Criar pull request).</li>
+            </ol>
+
+            <h2>17. Como revisar e aceitar um pull request?</h2>
+            <p>Para revisar e aceitar um pull request:</p>
+            <ol>
+                <li>Vá até a página do pull request no GitHub.</li>
+                <li>Revise as mudanças propostas no código, verificando as alterações e comentários.</li>
+                <li>Se tudo estiver correto, clique no botão “Merge pull request” (Mesclar pull request).</li>
+                <li>Escolha o método de merge desejado e confirme clicando em “Confirm merge” (Confirmar merge).</li>
+                <li>Se necessário, faça uma revisão final e clique em “Delete branch” (Excluir branch) para remover a branch após o merge.</li>
+            </ol>
+
+            <h2>18. O que são issues e como abrir uma issue no GitHub?</h2>
+            <p>Issues são itens de rastreamento para bugs, tarefas, melhorias e outros tipos de trabalho que precisam ser gerenciados. Para abrir uma issue:</p>
+            <ol>
+                <li>Vá até a página do repositório no GitHub e clique na aba “Issues”.</li>
+                <li>Clique no botão “New issue” (Nova issue).</li>
+                <li>Preencha o título e a descrição da issue, fornecendo informações detalhadas sobre o problema ou solicitação.</li>
+                <li>Clique em “Submit new issue” (Enviar nova issue) para criar a issue.</li>
+            </ol>
+
+            <h2>19. Como usar o sistema de projetos do GitHub para gerenciar tarefas?</h2>
+            <p>O sistema de projetos do GitHub permite organizar e gerenciar tarefas e fluxos de trabalho usando quadros Kanban. Para usar o sistema de projetos:</p>
+            <ol>
+                <!-- Esta seção estava fora do lugar e foi movida aqui -->
+                <li>Vá até a aba “Projects” (Projetos) do repositório.</li>
+                <li>Clique no botão “New project” (Novo projeto) para criar um novo quadro.</li>
+                <li>Defina um nome e uma descrição para o projeto, e configure os diferentes cartões para tarefas, bugs e melhorias.</li>
+                <li>Adicione e organize as tarefas nos diferentes cartões conforme necessário.</li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- Adicionando os arquivos JavaScript do Bootstrap e jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
